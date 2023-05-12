@@ -1,16 +1,14 @@
-<script setup>
-
-</script>
-
 <template>
-  <header>
-    <div class="wrapper">
-    </div>
-  </header>
+
+<NavBarComponent />
 
   <RouterView />
 </template>
 
-<style scoped>
+<script setup>
+  import NavBarComponent from './components/NavBarComponent.vue';
+</script>
+
+<style>
 
 </style>
