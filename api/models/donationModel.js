@@ -22,3 +22,6 @@ const donationSchema = new Schema ({
 {timestamps:true})
 
 const Donation=model('Donation',donationSchema)
+
+
+modeul.exports=Donation

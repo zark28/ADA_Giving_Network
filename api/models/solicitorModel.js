@@ -1,6 +1,7 @@
 const {model,Schema} =require("mongoose")
 
 const solicitorSchema = new Schema ({
+    
     organizatioName:{
         type:String,
         required:[true,"Name field cannot be empty"]
@@ -17,16 +18,12 @@ const solicitorSchema = new Schema ({
         type:String,
         required:[true,"field cannot be empty"]
     },
-    description:{
-        type:String,
-        required:[true,"Cause field cannot be empty"]
-    },
     firstName:{
-        String,
+       type:String,
         required:[true,"Name field cannot be empty"]
     },
     lastName:{
-        String,
+        type:String,
         required:[true,"Name field cannot be empty"]
     },
     email: {
@@ -52,5 +49,4 @@ const solicitorSchema = new Schema ({
 {timestamps:true})
 
 const Solicitor = model('Recipient',solicitorSchema)
-
-modeul.exports=Solicitor
+module.exports=Solicitor

@@ -5,8 +5,8 @@ const port = process.env.PORT
 const db=require('./db/dbconfig')
 app.use(express.json())
 
-
-app.use("/auth")
+const authRoutes =require('./routes/authRoutes')
+app.use("/auth",authRoutes)
 
 db().then(()=>{
     app.listen(port, () => {

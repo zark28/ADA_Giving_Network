@@ -36,3 +36,5 @@ const donorSchema = new Schema ({
 {timestamps:true})
 
 const Donor = model("Donor",donorSchema)
+
+module.exports=Donor
