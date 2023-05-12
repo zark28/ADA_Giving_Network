@@ -96,6 +96,12 @@ export default {
  }
 
  
-
+@media screen and (max-width: 480px) {
+  
+  header h3 {
+    width: 99%;
+    padding: 0 5px;
+  }
+}
 
 </style>

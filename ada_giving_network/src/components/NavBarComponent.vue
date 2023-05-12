@@ -17,8 +17,8 @@ export default {
     data() {
         return {
            navLinks: [
-                {name: "SignUp", path: "/auth"},
-                {name: "SignIn", path: "/auth"},
+                {name: "SignUp", path: "/signup"},
+                {name: "SignIn", path: "/signIn"},
            ] 
         };
     },
@@ -67,6 +67,7 @@ export default {
         letter-spacing: 2px;
         font-weight: bold;
         font-size: 16px;
+        color: black;
     }
 
     .nav-links a::before {
@@ -91,5 +92,11 @@ export default {
     width: 100%;
 }
 
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        column-gap: 10px;
+    }
+}
 
 </style>
